@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Member Login</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #46b89e;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 1.1em;
+            transition: opacity 0.3s;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #999;
+            color: #333;
+        }
+
+        .container {
+            padding: 20px 30px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        .login-form-card {
+            background-color: #fff;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .close {
+            display: none;
+        }
+
+        .imgcontainer {
+            display: none;
+        }
+
+        .login-header {
+            text-align: center;
+            padding-top: 50px;
+            position: relative;
+        }
+
+        .icon-circle {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+            background-color: #46b89e;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .icon-circle .user-icon {
+
+            color: white;
+            display: inline-block;
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .login-title {
+            margin: 10px 0 20px 0;
+            color: #333;
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+
+        @media screen and (max-width: 400px) {
+            .login-form-card {
+                width: 90%;
+            }
+
+            span.psw {
+                display: block;
+                float: none;
+                text-align: left;
+                padding-top: 8px;
+            }
+
+            .container {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <form class="login-form-card" action="index.html" method="post">
+
+        <div class="login-header">
+            <div class="icon-circle">
+                <span class="user-icon"></span>
+            </div>
+            <h3 class="login-title">Member Login</h3>
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Password" name="psw" required>
+
+            <button type="submit">Sign in</button>
+            <span class="psw"><a href="index.html"> Tidak jadi login?</a></span>
+        </div>
+    </form>
+
+</body>
+
+</html>
